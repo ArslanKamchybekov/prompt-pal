@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "brcypt": "^1.0.1",
+    "dotenv": "^16.4.5",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.2",
     "next": "14.2.5",
     "next-auth": "^4.24.7",
+    "openai": "^4.55.4",
     "react": "^18",
     "react-dom": "^18"
   },
