@@ -2,6 +2,7 @@ import '@styles/globals.css'
 import Provider from '@components/Provider'
 import Nav from '@components/Nav'
 import ChatButton from '@components/ChatButton'
+import { Suspense } from 'react'
 
 export const metadata = {
   title: 'GetPrompted',
@@ -18,7 +19,9 @@ const RootLayout = ({children}) =>{
           </div>
           <main className="app">
             <Nav />
-            {children}
+              <Suspense fallback={null}>
+                {children}
+              </Suspense>
             <ChatButton />
           </main>
         </Provider>
